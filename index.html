@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--Linkagem do Materialize CSS via CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--Linkagem da fonte de icones do Google-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Linkagem da fonte FontAwesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <!--Otimizar para Mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <title>Gustavo Henrique </title>
+
+        <style>
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+            }
+
+            main {
+                flex: 1 0 auto;
+            }
+        </style>
+    </head>
+
+    <body class="white">
+        <header>
+            <div class="navbar-fixed">
+                <nav class="grey darken-4">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo">Gustavo Henrique</a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="public/sobre.html" class="white-text"><i class="material-icons left">account_circle</i>Sobre mim</a>
+                            </li>
+
+                            <li>
+                                <a href="public/contato.html" class="white-text"><i class="material-icons left">chat</i>Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <ul class="sidenav grey darken-4" id="mobile-demo">
+                <li>
+                    <a href="#" class="white-text"><i class="material-icons left white-text">home</i>Home</a>
+                </li>
+
+                <li>
+                    <a href="public/sobre.html" class="white-text"><i class="material-icons left white-text">account_circle</i>Sobre mim</a>
+                </li>
+
+                <li>
+                    <a href="public/contato.html" class="white-text"><i class="material-icons left white-text">chat</i>Contato</a>
+                </li>
+            </ul>
+        </header>
+
+        <main>
+            <div class="container">
+                <h1 class="black-text" style="text-align: center;">Olá, eu sou o Gustavo!</h1>
+                <p class="flow-text black-text">Estudande de Sistemas de Informação. Amante de Python, Java, Rock and Roll e RAP.</p>
+                <div style="text-align: center;">
+                    <a href="public/sobre.html" class="waves-effect waves-blue btn-large deep-purple darken-2 white-text">Saiba mais sobre mim</a>
+                </div>
+
+                <h3 class="black-text">Projetos</h3>
+                <p class="flow-text black-text">Você é um <span class="pink-text">designer</span>, <span class="blue-text">programador</span>, <span class="green-text">pesquisador</span>, <span class="brown-text">cientista</span> ou <span class="yellow-text text-accent-4">estudante</span>? Vamos fazer um projeto!</p>
+                <div style="text-align: center;">
+                    <a href="public/contato.html" class="waves-effect waves-blue btn-large deep-purple darken-2 white-text">Entre em contato</a>
+                </div>
+
+                <div class="section">
+                    <h3 class="black-text">Acessível</h3>
+                    <p class="flow-text black-text">Acesse por qualquer dispositivo, seja ele um Tablet, Smartphone, Notebook. Esse website foi arquitetado com um design totalmente responsivo que irá se adaptar ao tamanho da sua tela. Nada de zooms desnecessários.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="page-footer grey darken-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l6">
+                        <h5 class="white-text">Gustavo Henrique</h5>
+                        <a href="https://www.linkedin.com/in/gustavo-henrique-caetano-50b80582/"><i class="fab fa-linkedin small white-text"></i></a>
+                        <a href="https://github.com/Seipherot/seipherots"><i class="fab fa-github small white-text"></i></a>
+                        <a href="https://medium.com/@ghcsf1"><i class="fab fa-medium small white-text"></i></a>
+                        <a href="https://twitter.com/GautstafrHaimir"><i class="fab fa-twitter small white-text"></i></a>
+                    </div>
+
+                    <div class="col l4 offset-l2 s12">
+                        <a href="#" class="white-text"><h5>Gustavo Henrique</h5></a>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="public/sobre.html">Sobre Mim</a></li>
+                            <li><a class="grey-text text-lighten-3" href="public/contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <div class="container white-text">
+                    © Gustavo Henrique Caetano 2019
+                </div>
+            </div>
+        </footer>
+
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <!--Materialize JavaScript-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <!--Side NavBar para Mobile-->
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+        </script>
+    </body>
+</html>

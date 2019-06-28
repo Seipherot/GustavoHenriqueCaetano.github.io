@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--Linkagem do Materialize CSS via CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--Linkagem da fonte de icones do Google-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Linkagem da fonte FontAwesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <!--Otimizar para Mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <title>Gustavo Henrique</title>
+
+        <style>
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+            }
+        
+            main {
+                flex: 1 0 auto;
+            }
+        </style>
+    </head>
+
+    <body class="grey darken-4">
+        <header>
+            <div class="navbar-fixed">
+                <nav class="grey darken-4">
+                    <div class="nav-wrapper">
+                        <a href="../index.html" class="brand-logo">Gustavo Henrique</a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="sobre.html" class="white-text"><i class="material-icons left">account_circle</i>Sobre mim</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="white-text"><i class="material-icons left">chat</i>Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+    
+            <ul class="sidenav grey darken-4" id="mobile-demo">
+                <li>
+                    <a href="../index.html" class="white-text"><i class="material-icons left white-text">home</i>Home</a>
+                </li>
+
+                <li>
+                    <a href="sobre.html" class="white-text"><i class="material-icons left white-text">account_circle</i>Sobre mim</a>
+                </li>
+
+                <li>
+                    <a href="#" class="white-text"><i class="material-icons left white-text">chat</i>Contato</a>
+                </li>
+            </ul>
+        </header>
+
+        <main>  
+            <div class="carousel carousel-slider center">
+                <div class="carousel-item blue darken-2 white-text" href="#one!">
+                    <h1 class="white-text">LinkedIn</h1>
+                    <a href="https://www.linkedin.com/in/gustavo-henrique-caetano-50b80582  "><i class="fab fa-linkedin large white-text"></i></a>
+                    <p class="white-text">Contato profissional</p>
+                </div>
+                
+                <div class="carousel-item grey darken-4 white-text" href="#two!">
+                    <h1>GitHub</h1>
+                    <a href="https://github.com/Seipherot/seipherots"><i class="fab fa-github large white-text"></i></a>
+                    <p>Projetos e ideias</p>
+                </div>
+                
+                <div class="carousel-item green white-text" href="#three!">
+                    <h1>Medium</h1>
+                    <a href="https://medium.com/@ghcsf1"><i class="fab fa-medium large white-text"></i></a>
+                    <p>Artigos</p>
+                </div>
+
+                <div class="carousel-item light-blue white-text" href="#five!">
+                    <h1>Twitter</h1>
+                    <a href="https://twitter.com/GautstafrHaimir"><i class="fab fa-twitter large white-text"></i></a>
+                    <p>Perfil pessoal</p>
+                </div>
+            </div>   
+        </main>
+
+        <footer class="page-footer grey darken-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l6">
+                        <h5 class="white-text">Gustavo Henrique</h5>
+                        <a href="https://www.linkedin.com/in/gustavo-henrique-caetano-50b80582/"><i class="fab fa-linkedin small white-text"></i></a>
+                        <a href="https://github.com/Seipherot/seipherots"><i class="fab fa-github small white-text"></i></a>
+                        <a href="https://medium.com/@ghcsf1"><i class="fab fa-medium small white-text"></i></a>
+                        <a href="https://twitter.com/GautstafrHaimir"><i class="fab fa-twitter small white-text"></i></a>
+                    </div>
+
+                    <div class="col l4 offset-l2 s12">
+                        <a href="../index.html" class="white-text"><h5>Gustavo Henrique</h5></a>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="sobre.html">Sobre Mim</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-copyright">
+                <div class="container white-text">
+                    © Gustavo Henrique Caetano 2019
+                </div>
+            </div>
+        </footer>
+
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <!--Materialize JavaScript-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <!--Side NavBar para Mobile-->
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+        </script>
+
+        <!--Carousel para tipos de contato-->
+        <script>
+            $(document).ready(function(){
+                $('.carousel.carousel-slider').carousel({
+                    fullWidth: true,
+                    indicators: true
+                });
+            });
+        </script>
+    </body>
+</html>
